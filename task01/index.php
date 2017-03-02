@@ -28,29 +28,17 @@ function isChangePlace($x, $y)
     $yLenght = strlen((string) $y);
 
     if ($xLenght == $yLenght) {
-        if ($x > $y) {
-            return true;
-        } else {
-            return false;
-        }
+        return ($x > $y);
     } else {
         if ($xLenght < $yLenght) {
-            $newY = substr($y, 0,$xLenght);
-            if ($x >= $newY ) {
-                return true;
-            } else {
-                return false;
-            }
+            $newY = substr($y, 0, $xLenght);
+            return ($x >= $newY);
         } else {
             $newX = substr($x, 0, $yLenght);
-            if ($newX > $y) {
-                return true;
-            } else {
-                return false;
-            }
+            return ($newX > $y);
         }
     }
 }
 
-var_dump(sortByFirstNumber([50, 2, 1, 9, 509]));
+var_dump(sortByFirstNumber([50, 2, 1, 9]));
 ?>
