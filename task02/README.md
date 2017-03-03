@@ -1,0 +1,1 @@
+Write a function that computes the sum of the numbers in a given list (1,2,50,7,9,36) using recursion.
