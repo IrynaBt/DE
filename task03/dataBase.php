@@ -1,15 +1,9 @@
 <?
 class dataBase {
-
-
     private $servername = "127.0.0.1";
     private $username = "root";
     private $password = "root";
     private $db = 'de';
-
-    function __construct(){
-
-    }
 
     /**
      * @return array || error

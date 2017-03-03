@@ -1,15 +1,9 @@
 <?
 class dataBase {
-
-
     private $servername = "127.0.0.1";
     private $username = "root";
     private $password = "root";
     private $db = 'de';
-
-    function __construct(){
-
-    }
 
     /**
      * @return array || error
@@ -36,6 +30,12 @@ ORDER BY username, training_date DESC';
         }
     }
 
+
+    /**
+     * @param $users
+     *
+     * @return string
+     */
     public function getCntLessons($users)
     {
         $result[0] = 'all';
