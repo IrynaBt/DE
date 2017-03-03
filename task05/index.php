@@ -18,7 +18,7 @@ Best regards,
 Heinz Müller';
 
 $emailHidden = preg_replace(
-    '/[[\sA-Z0-9._%+-]+[ ]?[\(|\[\{]?(@|at|äT|At|ad|\(\sad\s\)|\{)[\)\]\}]?[ ]?[A-Z0-9.-]+[ ]?[\(]?(\.|dot)[)]?[ ]?[A-Z]{0,4}/i',
+    '/[[\sA-Z0-9._%+-]+[ ]?[\(|\[\{]?(\s|@|at|äT|At|ad)[\)\]]?[ ]?[A-Z0-9.-]+[ ]?[\(]?(\.|dot)[)]?[ ]?[A-Z]{0,4}/i',
     '***E-MAIL HIDDEN***',
     $text
 );
